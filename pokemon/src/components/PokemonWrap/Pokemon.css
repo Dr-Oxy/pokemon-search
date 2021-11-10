@@ -1,0 +1,127 @@
+section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f4;
+}
+
+section.pokemon-wrapper h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+
+  box-shadow: 19px 15px 31px 0px rgba(133, 133, 133, 0.66);
+  -webkit-box-shadow: 19px 15px 31px 0px rgba(133, 133, 133, 0.66);
+  -moz-box-shadow: 19px 15px 31px 0px rgba(133, 133, 133, 0.66);
+}
+
+.poke-image {
+  box-shadow: 0px 12px 18px 0px rgba(133, 133, 133, 0.66);
+  -webkit-box-shadow: 0px 12px 18px 0px rgba(133, 133, 133, 0.66);
+  -moz-box-shadow: 0px 12px 18px 0px rgba(133, 133, 133, 0.66);
+
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.poke-image img {
+  height: 200px;
+}
+
+.poke-details {
+  margin-top: 15px;
+}
+
+.poke-details ul {
+  list-style: none;
+}
+
+.poke-details ul li::before {
+  content: '👉🏾';
+  margin-right: 10px;
+}
+
+.poke-details ul li span {
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.poke-details ul li {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    flex-direction: row;
+    justify-content: unset;
+    width: 60%;
+    padding: 30px;
+  }
+
+  .poke-image {
+    margin: unset;
+  }
+
+  .poke-image {
+    margin: unset;
+    padding: 30px;
+  }
+
+  .poke-details {
+    margin-top: unset;
+    margin-left: 30px;
+  }
+
+  .poke-details ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+/* Pokemon type changes the background color */
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric,
+.psychic {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #f6d6a7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #f4f4f4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire,
+.fighting {
+  background-color: #fbe3df;
+}
+.grass {
+  background-color: #e2f9e1;
+}
+.water {
+  background-color: #def3fd;
+}
+.ground {
+  background-color: #f4e7da;
+}
